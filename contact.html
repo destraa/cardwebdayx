@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Contact Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="image-repository/logo.png" alt="logo" />
+                    </li>
+                    <li>
+                        <a href="index.html" class="custom-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="custom-link">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact.html" class="custom-link">Contact Me</a>
+            </div>
+        </nav>
+
+        <form>
+            <h3 class="centered-h3">GET IN TOUCH</h3>
+            <div>
+                <label for="input-name">Name</label>
+                <input type="text" id="input-name" required />
+            </div>
+            
+            <div>
+                <label for="input-email">Email</label>
+                <input type="email" id="input-email" required />
+            </div>
+
+            <div>
+                <label for="input-number">Phone Number</label>
+                <input type="number" id="input-number" required />
+            </div>
+
+            <div>
+                <label for="input-subject">Subject</label>
+                <select id="input-subject" required>
+                    <option value="" hidden>Select</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Fullstack</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="input-message">Your Message</label>
+                <textarea required rows="3" cols="10" class="" id="input-message"></textarea>
+            </div>
+
+            <div class="button-container">
+                <button>Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
