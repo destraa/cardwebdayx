@@ -1,0 +1,70 @@
+
+input, select, textarea {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    box-shadow: 5px 5px 5px #a1a1a181;
+    resize: none;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px;
+}
+
+
+input[type="checkbox"] {
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type=checkbox]checked{
+    background-color: 007bff;
+    border-color: #007bff;
+}
+
+label{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+.input .file-upload-button {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
