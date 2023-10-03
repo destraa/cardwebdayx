@@ -1,3 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D6D9DD;
+}
+
+nav { /* flex container */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+nav ul li .active {
+    color: black;
+}
+
+.custom-link {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    font-size: 16px; 
+    padding: 5px 10px; 
+    background-color: white; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  /* Hover effect */
+.custom-link:hover {
+    background-color: orangered; 
+    color: #ffffff; 
+  }
+
+.nav-left { 
+    flex: 50%; 
+}
+
+.nav-right { 
+    flex: 50%;
+    text-align: end;
+    margin-right: 25px;
+    
+}
+
+.nav-right .custom-link {
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 14px; 
+    color: white; 
+  }
+
+.nav-right a {
+    background-color: rgba(18, 23, 38, 1);
+    padding: 8px 25px;
+    color: white;
+    border-radius: 5px;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s ease; 
+  }
+  
+  /* Hover effect */
+  .nav-right a:hover {
+    color: white;
+    background-color: orangered; 
+  }
+
+/* link css code dari contact.css */
+
+.centered-h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    width: 350px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+label {
+    font-weight: bold;
+}
 
 input, select, textarea {
     background-color: white;
@@ -6,65 +121,296 @@ input, select, textarea {
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #dbdbdb;
-    box-shadow: 5px 5px 5px #a1a1a181;
     resize: none;
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-  }
-  
+/* link css code dari contact.css */
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+  
+.centered-h2 {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 24px;
 }
 
-.checkbox-group {
+.section-one{
+
+    padding-top: 100px;  
+    padding-bottom:80px;
+    display:flex;
+    justify-content:center;
+    font-family: 'Poppins', sans-serif;
+    background-color:#D6D9DD;        
+
+}
+.section-one .container{
+
+    display:flex;
+    flex-direction:column;
+    width:35%;
+    padding:25px 50px;
+    border-radius:5px;
+    overflow:hidden;
+    align-items:center;
+    color:#374151;    
+    font-size:15px;   
+ 
+}
+
+.form-title h3{
+    width:100%;
+    margin-bottom:5px;
+    margin-top:5px;
+    display:flex;
+    justify-content:center;
+    color:#374151;   
+    
+}
+
+.form-title h2{
+    width:100%;
+    margin-bottom:0px;
+    margin-top:0px;
+    display:flex;
+    justify-content:center;
+    color: black;
+    
+}
+
+.form-container {
+    width:100%;
+    padding-top:15px;
+    font-family: poppins;   
+    
+}
+
+.project-time{   
+    display:grid;
+    grid-template-columns: 130px 130px;
+    gap:10px;
+    
+}
+
+
+.form-container form .project-id input, .project-name input, .project-time  input, textarea {
+    width: 100%; 
+    border:none;
+    padding:5px 10px;
+    border-radius:3px;
+    margin-bottom:15px;
+    font-size:14px;
+    box-shadow: 5px 5px 5px #a1a1a181;
+    
+}
+
+.form-container form textarea{
+    height:75px;
+    resize:none;
+    font-size:14px;
+    font-family: poppins;
+}
+
+
+.tech-option {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    gap: 10px;
-    height: 250px;
+    gap: 20px;
+    font-size:13px;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:20px
+    
+}
+
+.input-blog-image{
+    display:flex;
+    justify-content:space-between;
+    box-shadow: 5px 5px 5px #80808081;
+    font-size:13px;
+    padding-right:5px;
+    padding-top: 5px;
+    padding-bottom:15px;
+    border-radius:3px;
+    overflow:hidden;
+    cursor:pointer;
+    margin-bottom:23px;
+    transition:0.5s ease;
+    outline: 1px solid orangered;
 }
 
 
-input[type="checkbox"] {
-    appearance: none; 
-    width: 20px;
-    height: 20px;
-    border: 1px solid #333;
-    border-radius: 3px;
+.input-blog-image img{
+    width:20px;
+    rotate:45deg;
+    
+}
+
+
+.input-blog-image .text{
+    padding-top: 0vmax;
+    opacity: 0.9;
+    background-color: orangered;
+}
+
+.input-blog-image:hover{
+    opacity:0.7;
+    outline:1px solid black;
+}
+
+
+
+      
+.submit-button-container{
+    display:flex;
+    justify-content:end;
+    align-items: center; 
+    height: 85px; 
+}
+
+.submit-button-container .submit-button{
+    background-color: rgba(18, 23, 38, 1);
+    color: white;
+    padding: 6px 25px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-size: 15px;
     cursor: pointer;
 }
 
-input[type=checkbox]checked{
-    background-color: 007bff;
-    border-color: #007bff;
-}
-
-label{
-    display: inline-block;
-    margin-left: 5px;
+.submit-button-container .submit-button:hover{
+    background-color: orangered;
 }
 
 
-.input .file-upload-button {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #f9f9f9;
+/* css section 2 */
+
+.section-two{
+    background-color:#f5f5f5;
+    
+    padding:20px;
+}
+    
+.section-two .container {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    font-family:poppins;
+    color:#374151;  
+    padding:10px 100px;   
+    
 }
 
+.container-title {
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+
+.container-content{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap:30px;     
+}
+
+.container .container-content a{
+    text-decoration:none;
+    color:#374151;
+} 
+
+.container-content .card-project-1{
+    margin-top:20px;
+    padding:15px;
+    border:1px solid black;
+    border-radius:5px;
+    border:none;
+    outline:1px solid  #fe4e30;
+    transition:0.4s ease;
+    cursor:pointer;
+    
+}
+
+.container-content .card-project-1:hover{
+    background-color:#fe4e30;
+    outline:none;
+    box-shadow: 5px 5px 5px #a1a1a181;
+    color:white;
+}
+
+
+.container-card-project{
+     width:100%;
+     overflow:hidden;
+     background-color:transparent;
+     font-family:Poppins;    
+}
+
+.container-card-project img{
+    width:100%;
+    border-radius:3px;
+    margin-bottom:7px;
+}
+
+.card-project-title{
+    padding:0px 7px;
+    font-weight:bold;
+    font-size:17px
+  
+}
+
+.card-project-duration{
+    padding:7px 7px;
+    font-size:12px  
+  
+}
+
+.card-project-desc{
+    padding:15px 7px;
+    font-size:14px;
+    text-align:justify;
+}
+
+.card-project-tech .tech-option{
+    padding:0px 7px;
+    display:flex;
+    justify-content:start;
+
+}
+
+.card-project-tech .tech-option img{
+    width:30px;
+}
+
+.card-project-button{
+    padding:5px 5px;
+    display:flex;
+    justify-content:end;
+    gap:10px;
+}
+
+.card-project-button .delete-button, button{
+    padding:5px 12px;
+    border:none;
+    background-color:#fe4e30;
+    color:white;
+    border-radius:3px;
+    cursor:pointer;
+    transition: 0.5s ease;
+    font-weight:bold;
+}
+
+.card-project-button .edit-button, button{
+    padding:5px 20px;
+    border:none;
+    background-color:#fe4e30;
+    color:white;
+    border-radius:3px;
+    cursor:pointer;
+    transition: 0.5s ease;
+}
+
+.container-content:hover .card-project-1:hover button{
+    background-color:white;
+    color:#fe4e30;
+
+}
