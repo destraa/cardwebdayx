@@ -4,6 +4,7 @@
         <title>Personal Web</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="#">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
     <style>
         a.custom-linked {
@@ -45,6 +46,24 @@
                 <a href="contact.html" class="custom-link">Contact Me</a>
             </div>
         </nav>
+
+        <div class="nav-right" id="barsmenu">
+            <button
+              style="background-color: transparent; border: none; cursor: pointer"
+              onclick="openHamburger()"
+            >
+              <i class="fa-2x fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+    
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+          <a href="index.html" class="hamburger-active">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Me</a>
+        </div>
+    
+
         <div class="custom-container">
             <div class="left-div">
                 <h2>Hi! Welcome to my card</h2>
@@ -87,5 +106,6 @@
                 </div>
             </div>
         </div>
+        <script src="./button.js"> </script>
     </body>
 </html>

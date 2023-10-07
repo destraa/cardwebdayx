@@ -87,7 +87,7 @@ nav ul li .active {
   }
   
   /* Hover effect */
-  .nav-right a:hover {
+.nav-right a:hover {
     color: white;
     background-color: orangered; 
   }
