@@ -3,6 +3,7 @@
 * {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    font-color: white;
 }
 
 body {
@@ -111,7 +112,29 @@ nav ul li .active {
     font-size: 44px;
     line-height: 120%;
     margin-bottom: 15px;
+
   }
+
+  h1 {
+    color: white;
+  }
+
+  h2 {
+    color: whitesmoke;
+  }
+
+  p {
+    color:#d5d5d5;
+  }
+
+  i {
+    color: white;
+  }
+
+  td {
+    color: white;
+  }
+
   
   .blog-detail-container .author {
     font-weight: 100;
