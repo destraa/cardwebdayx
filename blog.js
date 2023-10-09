@@ -47,35 +47,35 @@ function addBlog(event) {
 }
 
 function renderBlog() {
-  const container = document.getElementById("container-content");
-  container.innerHTML = ''; // Clear the container first
+  document.getElementById("contents").innerHTML = "";
 
   for (let index = 0; index < dataBlog.length; index++) {
     console.log(dataBlog[index]);
 
-    container.innerHTML += `
-      <div class="form-project-image">
-        <div class="image-add">
-          <img src="${dataBlog[index].image}" alt="Thumbnail">
-        </div>
-        <h4>
-          <a href="blog-detail.html">${dataBlog[index].project}</a>
-        </h4>
-        <p class="duration-project">durasi : ${dataBlog[index].duration} bulan</p>
-        <p>${dataBlog[index].description}</p>
-        <div class="icon-technology">
-          ${dataBlog[index].checkbox1 ? `<i class="fa-brands fa-node-js show"></i>` : `<i class="fa-brands fa-node-js"></i>`}
-          ${dataBlog[index].checkbox2 ? `<i class="fa-brands fa-react show"></i>` : `<i class="fa-brands fa-react"></i>`}
-          ${dataBlog[index].checkbox3 ? `<i class="fa-brands fa-js fa-xl show"></i>` : `<i class="fa-brands fa-js fa-xl"></i>`}
-          ${dataBlog[index].checkbox4 ? `<i class="fa-brands fa-vuejs fa-xl show"></i>` : `<i class="fa-brands fa-vuejs fa-xl"></i>`}
-        </div>
-        <div class="button-add-project">
-          <button class="edit-button">edit</button>
-          <button class="delete-button">delete</button>
-        </div>
-      </div>`;
+    document.getElementById("contents").innerHTML += `
+        <div class="blog-list-item">
+                    <div class="thumb">
+                        <img src="${dataBlog[index].image}" alt="Thumbnail">
+                    </div>
+                    <h4>
+                        <a href="blog-detail.html">${dataBlog[index].project}</a>
+                    </h4>
+                    <p class="duration">durasi : ${dataBlog[index].duration} bulan</p>
+                    <p>${dataBlog[index].description}</p>
+                    <div class="icon-technology">
+                        ${(dataBlog[index].checkbox1 ? `<i class="fa-brands fa-node-js show"></i>` : `<i class="fa-brands fa-node-js"></i>`)}
+                        ${(dataBlog[index].checkbox2 ? `<i class="fa-brands fa-react show"></i>` : `<i class="fa-brands fa-react"></i>`)}
+                        ${(dataBlog[index].checkbox3 ? `<img src="./image/Nextjs-logo.svg.png" class="next show" alt="Next Js">` : `<img src="./image/Nextjs-logo.svg.png" class="next" alt="Next Js">`)}
+                        ${(dataBlog[index].checkbox4 ? `<img src="./image/Typescript_logo_2020.svg.png" class="show" alt="TypeScript">` : `<img src="./image/Typescript_logo_2020.svg.png" alt="TypeScript">`)}
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-blog">edit</button>
+                        <button class="btn-blog">delete</button>
+                    </div>
+                </div>`;
   }
 }
+
 
 function monthDiff(startDate, endDate) {
   let months = (endDate.getFullYear() - startDate.getFullYear()) * 12;

@@ -307,184 +307,94 @@ input, select, textarea {
     width:100%;
 }
 
-.container-content{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    column-gap:30px;     
-}
-
-.container .container-content a{
-    text-decoration:none;
-    color:#374151;
-} 
-
-.container-content .card-project-1{
-    margin-top:20px;
-    padding:15px;
-    border:1px solid black;
-    border-radius:5px;
-    border:none;
-    outline:1px solid  #fe4e30;
-    transition:0.4s ease;
-    cursor:pointer;
-    
-}
-
-.container-content .card-project-1:hover{
-    background-color:#fe4e30;
-    outline:none;
-    box-shadow: 5px 5px 5px #a1a1a181;
-    color:white;
-}
-
-
-.container-card-project{
-     width:100%;
-     overflow:hidden;
-     background-color:transparent;
-     font-family:Poppins;    
-}
-
-.container-card-project img{
-    width:100%;
-    border-radius:3px;
-    margin-bottom:7px;
-}
-
-.card-project-title{
-    padding:0px 7px;
-    font-weight:bold;
-    font-size:17px
-  
-}
-
-.card-project-duration{
-    padding:7px 7px;
-    font-size:12px  
-  
-}
-
-.card-project-desc{
-    padding:15px 7px;
-    font-size:14px;
-    text-align:justify;
-}
-
-.card-project-tech .tech-option{
-    padding:0px 7px;
-    display:flex;
-    justify-content:start;
-
-}
-
-.card-project-tech .tech-option img{
-    width:30px;
-}
-
-.card-project-button{
-    padding:5px 5px;
-    display:flex;
-    justify-content:end;
-    gap:10px;
-}
-
-.card-project-button .delete-button, button{
-    padding:5px 12px;
-    border:none;
-    background-color:#fe4e30;
-    color:white;
-    border-radius:3px;
-    cursor:pointer;
-    transition: 0.5s ease;
-    font-weight:bold;
-}
-
-.card-project-button .edit-button, button{
-    padding:5px 20px;
-    border:none;
-    background-color:#fe4e30;
-    color:white;
-    border-radius:3px;
-    cursor:pointer;
-    transition: 0.5s ease;
-}
-
-.container-content:hover .card-project-1:hover button{
-    background-color:white;
-    color:#fe4e30;
-
-}
-
-/* card project image secton styling */
-.name-project-card {
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-    top: 15px;
-    font-family: Kelly Slab;
-}
-
-.form-project-card-add {
+/* blog list in section 2 */
+.blog .blog-list {
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-.form-project-card {
-    background-color: rgb(255, 255, 255);
-    margin: 20px 20px;
-    padding: 25px;
-    width: 25%;
-    box-shadow: 0px 0px 20px;
-    border-radius: 5px;
-    font-family: Poppins;
-    outline: 1px solid orangered;
-}
-
-.form-project-image {
+    background-color: #F8F8F8;
+  }
+  
+.blog-list .blog-list-item {
+    width: 300px;
+    padding: 15px;
+    margin: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
     display: flex;
-    justify-content: center;
-    object-fit: cover;
-}
+    flex-direction: column;
+  }
 
-.image-add {
-    object-fit: cover;
-    width: 110%;
-    height: 250px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.blog-list-item {
+    width: 300px;
+    padding: 15px;
+    margin: 20px;
+    border: 2px solid #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
-
-.card-duration-icon  {
-    color: orangered;
-}
-
-.duration-project {
-    color: black;
-    font-weight: bold;
-}
-
-.title-add-project a {
-    text-decoration: none;
-    color: orangered;
-}
-
-.description-project p {
-    color: rgb(75, 75, 75);
-}
-
-.description-project .description-project-coment {
-    text-align: justify;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: poppins;
-    margin-top: 20px;
-    height: 40px;
-}
-
+  
+.blog-list .blog-list-item .thumb img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+.blog-list .blog-list-item h4 {
+   margin: 8px 0 0 0;
+  }
+  
+.blog-list .blog-list-item p {
+    margin: 8px 0;
+  }
+  
+.blog-list .blog-list-item p.duration {
+    color: gray;
+    margin-top: 4px;
+  }
+  
+.blog-list .blog-list-item .icon-technology {
+    margin: 18px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+.blog-list .blog-list-item .icon-technology i {
+    font-size: 25px;
+    margin: 0 10px;
+    display: none;
+  }
+  
+.blog-list-item .icon-technology i.show {
+    display: inline-block;
+  }
+  
+.blog-list-item .icon-technology img  {
+    width: 24px;
+    margin: 0 10px;
+    display: none;
+  }
+  
+.blog-list-item .icon-technology img.next  {
+    width: 85px;
+  }
+  
+.blog-list-item .icon-technology img.show  {
+    display: inline-block; 
+  }
+  
+.blog-list-item .icon-technology i:first-of-type {
+    margin: 0 10px 0 0;
+  }
+  
 .technologies-project {
     margin: 40px 0px;
     color:orangered;
+
 }
 
 .technologies-project-card {
@@ -493,48 +403,21 @@ input, select, textarea {
     gap: 30px;
 }
 
-.button-add-project {
+.btn-group {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-}
-
-.button-add-project button {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 10px;
-    margin-top: 20px;
-    font-size: 15px;
+    justify-content: space-between;
+  }
+  
+.btn-group .btn-blog {
+    width: 47%;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    background: #111727;
+    color: white;
     cursor: pointer;
-    font-size: 13px;
-    
-}
+  }
+/* blog list in section 2 */
 
-button {
-    background-color: y;
-    color: rgb(255, 255, 255);
-    padding: 6px;
-    border: none;
-    border-radius: 0px;
-    margin-top: 5px;
-    font-size: 12px;
-    cursor: pointer;
-    font-family: poppins;
-    font-weight: bold;
-}
 
- .edit-button {
-    background-color: rgb(189, 138, 0);
-}
 
-.delete-button {
-    background-color: rgb(136, 0, 0);
-    color: rgb(255, 255, 255);
-}
