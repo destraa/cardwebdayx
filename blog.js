@@ -65,8 +65,8 @@ function renderBlog() {
                     <div class="icon-technology">
                         ${(dataBlog[index].checkbox1 ? `<i class="fa-brands fa-node-js show"></i>` : `<i class="fa-brands fa-node-js"></i>`)}
                         ${(dataBlog[index].checkbox2 ? `<i class="fa-brands fa-react show"></i>` : `<i class="fa-brands fa-react"></i>`)}
-                        ${(dataBlog[index].checkbox3 ? `<img src="./image/Nextjs-logo.svg.png" class="next show" alt="Next Js">` : `<img src="./image/Nextjs-logo.svg.png" class="next" alt="Next Js">`)}
-                        ${(dataBlog[index].checkbox4 ? `<img src="./image/Typescript_logo_2020.svg.png" class="show" alt="TypeScript">` : `<img src="./image/Typescript_logo_2020.svg.png" alt="TypeScript">`)}
+                        ${(dataBlog[index].checkbox3 ? `<img src="./image-repository/Nextjs-logo.svg.png" class="next show" alt="Next Js">` : `<img src="./image-repository/Nextjs-logo.svg.png" class="next" alt="Next Js">`)}
+                        ${(dataBlog[index].checkbox4 ? `<img src="./image-repository/Typescript_logo_2020.svg.png" class="show" alt="TypeScript">` : `<img src="./image-repository/Typescript_logo_2020.svg.png" alt="TypeScript">`)}
                     </div>
                     <div class="btn-group">
                         <button class="btn-blog">edit</button>
