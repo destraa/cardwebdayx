@@ -34,7 +34,7 @@
             </div>
             
             <div>
-                <label for="input-email" name="email" placeholder="Ypour Email">Email</label>
+                <label for="input-email" name="email" placeholder="Your Email">Email</label>
                 <input type="email" id="input-email" required />
             </div>
 
@@ -63,21 +63,7 @@
             </div>
         </form>
 
-        <script src="./contact.js"></script>
-        <script>
-             var submitButton = document.getElementById('submitButton');
-    
-             submitButton.addEventListener('click', function() {
-                 var name = document.querySelector('input[name="input-name"]').value;
-                 var email = document.querySelector('input[name="email"]').value;
-                 var numberphone = document.querySelector('input[name="numberphone"]').value;
-                 var subject = document.querySelector('input[name="subject"]').value;
-    
-                var mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=Halo, nama saya ${name}, Tolong kontak saya di nomor ${numberphone} atau email saya di ${email}`;
-    
-             //    // Open the user's default email application
-                 window.location.href = mailtoLink;
-            });
-        </script>
+        <script src="contact.js"></script>
+
     </body>
 </html>
