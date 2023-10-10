@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <link rel="icon" type="image-repository/png" href="image-repository/book.png">
+        <title>Personal Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="blog.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="testimonials.css">
+
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <style>
+    </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="image-repository/logo.png" style="margin-left: 40px;" alt="logo" />
+                    </li>
+                    <li>
+                        <a href="index.html" class="custom-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="custom-link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="testimonials.html" class="custom-link">Testimonial</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right" style="margin-top: 1rem">
+                <a href="contact.html" class="custom-link">Contact Me</a>
+            </div>
+        </nav>
+
+           <!-- Nav Bar Mobile-->
+
+    <main>
+        <section>
+            <h1 class="title" style="background-color: hsl(210 17% 91%);">My Testimonials</h1>
+        <!-- Sort Rating -->
+        <div class="sortByRating__container">
+          <p>Sort by Rating</p>
+          <div class="rating__btnContainer">
+            <button class="rating__btn active" id="0-stars" onclick="filterTestimonial(0)">All</button>
+
+            <button class="rating__btn" id="1-stars" onclick="filterTestimonial(1)"> <p>One</p>
+              <i class="fa-solid fa-star"></i>
+            </button>
+
+            <button class="rating__btn" id="2-stars" onclick="filterTestimonial(2)"> <p>Two</p>
+              <i class="fa-solid fa-star"></i>
+            </button>
+
+            <button class="rating__btn" id="3-stars" onclick="filterTestimonial(3)"> <p>Three</p>
+              <i class="fa-solid fa-star"></i>
+            </button>
+
+            <button class="rating__btn" id="4-stars" onclick="filterTestimonial(4)"> <p>Four</p>
+              <i class="fa-solid fa-star"></i>
+            </button>
+
+            <button class="rating__btn" id="5-stars" onclick="filterTestimonial(5)"> <p>Five</p>
+              <i class="fa-solid fa-star"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Testimonial Container -->
+        <div class="testimonial__container" id="testimonial__container" style=""><div class="testimonial__card" style="">
+            <img class="testimonial__cardImage" src="https://images.unsplash.com/photo-1498609458988-7b2c70d9213a?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" style="">
+            <i class="testimonial__comment">"This website is amazing! The user interface is so intuitive, and the design is modern and appealing. I'm really impressed with the attention to detail and the overall experience."</i>
+            <p class="testimonial__stars" id="reviewStars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p class="testimonial__author">- John Doe</p>
+          </div> <div class="testimonial__card" style="">
+            <img class="testimonial__cardImage" src="https://images.unsplash.com/photo-1524282540044-f375913440a3?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1887&amp;q=80" style="">
+            <i class="testimonial__comment" style="">"I've visited many websites, but this one stands out. The content is organized beautifully, and the responsiveness on mobile devices is fantastic. The clean layout makes it a joy to explore."</i>
+            <p class="testimonial__stars" id="reviewStars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p class="testimonial__author" style="">- Jane Smith</p>
+          </div> <div class="testimonial__card">
+            <img class="testimonial__cardImage" src="https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80">
+            <i class="testimonial__comment">"I stumbled upon this website and was blown away by the quality of the content. The visuals are stunning, and the navigation is seamless. It's clear that the creators put a lot of effort into making this a top-notch site."</i>
+            <p class="testimonial__stars" id="reviewStars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p class="testimonial__author">- Alex Johnson</p>
+          </div> <div class="testimonial__card" style="">
+            <img class="testimonial__cardImage" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1964&amp;q=80" style="">
+            <i class="testimonial__comment">"I absolutely love this website! The user experience is smooth, and I appreciate how easy it is to find the information I need. The design choices are modern and visually appealing. Highly recommended!"</i>
+            <p class="testimonial__stars" id="reviewStars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p class="testimonial__author">- Emily Williams</p>
+          </div> <div class="testimonial__card">
+            <img class="testimonial__cardImage" src="https://images.unsplash.com/photo-1505075448726-57fe033637a2?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1776&amp;q=80">
+            <i class="testimonial__comment">"Absolutely amazing! This website exceeded all my expectations. The design is stunning, and the user experience is flawless. I can't recommend it enough!"</i>
+            <p class="testimonial__stars" id="reviewStars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p class="testimonial__author">- Alice Johnson</p>
+          </div> <div class="testimonial__card">
+            <img class="testimonial__cardImage" src="https://images.unsplash.com/photo-1591420797434-062352120f8b?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1940&amp;q=80">
+            <i class="testimonial__comment">"Meh, it's okay. The website looks fine, but it's not very user-friendly. Navigation could be improved, and the design feels a bit outdated."</i>
+            <p class="testimonial__stars" id="reviewStars">
+              <i class="fa-solid fa-star"></i>
+            </p>
+            <p class="testimonial__author">- Bob Smith</p>
+          </div> <div class="testimonial__card">
+            <img class="testimonial__cardImage" src="https://images.unsplash.com/photo-1475870434835-a633fd526088?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80">
+            <i class="testimonial__comment">"Decent website overall. It has some useful content, but there's room for improvement. The layout is a bit confusing, and I found a few broken links."</i>
+            <p class="testimonial__stars" id="reviewStars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p class="testimonial__author">- Carol Williams</p>
+          </div> <div class="testimonial__card">
+            <img class="testimonial__cardImage" src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80">
+            <i class="testimonial__comment">"Pretty good website! The design is modern and engaging. The content is well-organized, and I appreciate the attention to detail. Some minor glitches here and there, though"</i>
+            <p class="testimonial__stars" id="reviewStars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p class="testimonial__author">- David Martinez</p>
+          </div> <div class="testimonial__card">
+            <img class="testimonial__cardImage" src="https://images.unsplash.com/photo-1615241721719-cffa5802f256?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80">
+            <i class="testimonial__comment">"Terrible experience. This website is a mess. The design is ugly, and it's difficult to find anything. I encountered errors everywhere. Avoid at all costs!"</i>
+            <p class="testimonial__stars" id="reviewStars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p class="testimonial__author">- Eve Anderson</p>
+          </div></div>
+
+        </section>
+    </main>    
+    <script src="navbar.js"></script>
+    <script src="testimonials.js"></script>
+    </body>
+</html>
