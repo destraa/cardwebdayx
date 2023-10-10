@@ -66,7 +66,7 @@ function renderBlog() {
                         ${(dataBlog[index].checkbox1 ? `<img src="./image-repository/node-js.svg" class="show" alt="Node JS">` : `<img src="./image-repository/node-js.svg" alt="/Node Js">`)}
                         ${(dataBlog[index].checkbox2 ? `<img src="./image-repository/react.svg" class="show" alt="React JS">` : `<img src="./image-repository/react.svg" alt="React JS">`)}
                         ${(dataBlog[index].checkbox3 ? `<img src="./image-repository/next js.svg" class="show" alt="Next Js">` : `<img src="./image-repository/next js.svg" alt="Next Js">`)}
-                        ${(dataBlog[index].checkbox4 ? `<img src="./image-repository/typescript.svg" class="show" alt="TypeScript">` : `<img src="./image-repository/typescript.svg" alt="TypeScript">`)}
+                        ${(dataBlog[index].checkbox4 ? `<img src="./image-repository/vuejs.svg" class="show" alt="Vue JS">` : `<img src="./image-repository/vuejs.svg" alt="Vue Js">`)}
                     </div>
                     <div class="btn-group">
                         <button class="btn-blog">edit</button>
