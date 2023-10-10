@@ -63,10 +63,10 @@ function renderBlog() {
                     <p class="duration">durasi : ${dataBlog[index].duration} bulan</p>
                     <p>${dataBlog[index].description}</p>
                     <div class="icon-technology">
-                        ${(dataBlog[index].checkbox1 ? `<i class="fa-brands fa-node-js show"></i>` : `<i class="fa-brands fa-node-js"></i>`)}
-                        ${(dataBlog[index].checkbox2 ? `<i class="fa-brands fa-react show"></i>` : `<i class="fa-brands fa-react"></i>`)}
-                        ${(dataBlog[index].checkbox3 ? `<img src="./image-repository/Nextjs-logo.svg.png" class="next show" alt="Next Js">` : `<img src="./image-repository/Nextjs-logo.svg.png" class="next" alt="Next Js">`)}
-                        ${(dataBlog[index].checkbox4 ? `<img src="./image-repository/Typescript_logo_2020.svg.png" class="show" alt="TypeScript">` : `<img src="./image-repository/Typescript_logo_2020.svg.png" alt="TypeScript">`)}
+                        ${(dataBlog[index].checkbox1 ? `<img src="./image-repository/node-js.svg" class="show" alt="Node JS">` : `<img src="./image-repository/node-js.svg" alt="/Node Js">`)}
+                        ${(dataBlog[index].checkbox2 ? `<img src="./image-repository/react.svg" class="show" alt="React JS">` : `<img src="./image-repository/react.svg" alt="React JS">`)}
+                        ${(dataBlog[index].checkbox3 ? `<img src="./image-repository/next js.svg" class="show" alt="Next Js">` : `<img src="./image-repository/next js.svg" alt="Next Js">`)}
+                        ${(dataBlog[index].checkbox4 ? `<img src="./image-repository/typescript.svg" class="show" alt="TypeScript">` : `<img src="./image-repository/typescript.svg" alt="TypeScript">`)}
                     </div>
                     <div class="btn-group">
                         <button class="btn-blog">edit</button>
