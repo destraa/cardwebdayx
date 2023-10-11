@@ -29,7 +29,7 @@
             </div>
         </nav>
 
-        <form form="form-container">
+        <form form="form-container" onsubmit="sendEmail(); reset(); return false;">
             <h3 class="centered-h3">GET IN TOUCH</h3>
             <div>
                 <label for="input-name" name="name" placeholder="Your Name">Name</label>
@@ -62,11 +62,29 @@
             </div>
 
             <div class="button-container">
-                <button type="button" id="submitButton" onclick="submitData()">Submit</button>
+                <button type="button" id="submitButton" onclick="sendEmail()"">Submit</button>
             </div>
         </form>
 
-        <script src="contact.js"></script>
+        <script src="#"></script>
+        <script> src="https://smtpjs.com/v3/smtp.js"</script>
+        <script>
+                function sendEmail() {
+                    Email.send({
+                        SecureToken: "906345fb-f94b-4bfb-a442-d7161f99fcd4",
+                        To: 'dewanxs01@gmail.com',
+                        From: document.getElementById("Email").value,
+                        Subject: "New Contact Form Enquiry",
+                        Body: "Name:" + document.getElementById("input-name").value
+                            + "<br> Email: " + document.getElementById("input-email").value
+                            + "<br> Number: " + document.getElementById("input-number").value
+                            + "<br> subject: " + document.getElementById("input-subject").value
+                            + "<br> message: " + document.getElementById("input-message").value
+                    }).then(
+                        message => alert("Message Has Been Sent Successfully")
+                    );
+                }
+        </script>
 
     </body>
 </html>

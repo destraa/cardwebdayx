@@ -21,7 +21,7 @@ function submitData() {
     return alert("Message must be filled!");
   }
 
-  let emailReceiver = "dewans047@gmail.com";
+  let emailReceiver = "dewanxs01@gmail.com";
 
   // <a href="mailto:${emailReceiver}?subject=${subject}&body=Halo, nama saya ${name}, ${message}. Tolong kontak saya di nomor ${number} atau email saya di ${email}"></a>
 
