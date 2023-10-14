@@ -6,6 +6,11 @@
     color: black;
 }
 
+/* Bootstrap Styling Assets */
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+/* Bootstrap Styling Assets */
 body {
     margin: 0;
     padding: 0;
@@ -21,6 +26,7 @@ nav { /* flex container */
     align-items: center;
     height: 10vh;
     width: 100vw;
+    box-shadow: #020202;
 }
 
 nav ul {

@@ -21,6 +21,7 @@ nav { /* flex container */
     align-items: center;
     height: 10vh;
     width: 100vw;
+    box-shadow: #030303;
 }
 
 nav ul {
